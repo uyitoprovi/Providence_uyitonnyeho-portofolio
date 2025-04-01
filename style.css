@@ -1,0 +1,462 @@
+        /* Global styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Banner at the top of the page with rotating text */
+        .banner {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            padding: 20px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Banner heading */
+        .banner h1 {
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+        
+        /* Container for rotating text spans */
+        .text-container {
+            height: 30px;
+            position: relative;
+            margin: 10px 0;
+        }
+        
+        /* Individual text items that rotate */
+        .text {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: cycleText 12s infinite;
+            font-weight: 500;
+        }
+        
+        /* Animation delay for each text item */
+        .text:nth-child(1) {
+            animation-delay: 0s;
+        }
+        
+        .text:nth-child(2) {
+            animation-delay: 3s;
+        }
+        
+        .text:nth-child(3) {
+            animation-delay: 6s;
+        }
+        
+        .text:nth-child(4) {
+            animation-delay: 9s;
+        }
+        
+        /* Keyframes animation for text cycling */
+        @keyframes cycleText {
+            0%, 5% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            10%, 22% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            27%, 100% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+        }
+        
+        /* Sticky navigation section */
+        .sticky-section {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Container for navbar elements */
+        .navbar-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+        
+        /* Profile picture container in navbar */
+        .nav-profile {
+            display: flex;
+            align-items: center;
+        }
+        
+        /* Profile picture styling */
+        .profile-picture {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        /* Navigation links container */
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        
+        /* Individual navigation link */
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #6e8efb;
+        }
+        
+        /* Dark mode toggle button */
+        .dark-mode-toggle {
+            cursor: pointer;
+            font-size: 20px;
+        }
+        
+        /* Main content container */
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        /* Hero section */
+        .hero {
+            margin-bottom: 50px;
+        }
+        
+        /* Hero heading */
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        /* Hero paragraph */
+        .hero p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 20px;
+            max-width: 700px;
+        }
+        
+        /* Social links container */
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        /* Individual social icon */
+        .social-icon {
+            font-size: 24px;
+            color: #555;
+            transition: color 0.3s;
+        }
+        
+        .social-icon:hover {
+            color: #6e8efb;
+        }
+        
+        /* Content section with main and sidebar */
+        .content-section {
+            display: flex;
+            gap: 40px;
+        }
+        
+        /* Main content area */
+        main {
+            flex: 3;
+        }
+        
+        /* Sidebar content */
+        aside {
+            flex: 1;
+        }
+        
+        /* Article card container */
+        .article-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        /* Article date display */
+        .article-date {
+            color: #888;
+            font-size: 14px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        /* Article title */
+        .article-title {
+            font-size: 22px;
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+        
+        /* Article excerpt/summary */
+        .article-excerpt {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        /* Article image */
+        .article-card img {
+            width: 100%;
+            border-radius: 6px;
+            margin: 10px 0;
+        }
+        
+        /* Read more link */
+        .read-more {
+            display: inline-flex;
+            align-items: center;
+            color: #6e8efb;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+        
+        /* Sidebar card container */
+        .sidebar-card {
+            background-color: rgba(30, 30, 30, 0.7);
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        } 
+        /* Sidebar title */
+        .sidebar-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        
+        /* Newsletter description text */
+        .newsletter-text {
+            color: #b0b0b0;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+        
+        /* Newsletter form */
+        .newsletter-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        
+        /* Newsletter input field */
+        .newsletter-input {
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            border: 1px solid #333;
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+            font-size: 0.95rem;
+        }
+        
+        /* Newsletter submit button */
+        .newsletter-button {
+            background-color: #2d2d2d;
+            color: #e0e0e0;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+    
+        /* Work experience entry */
+        .work-entry {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        /* Work logo container */
+        .work-logo {
+            width: 40px;
+            height: 40px;
+            border-color: 10px  #ddd;
+            flex-shrink: 0;
+        }
+        
+        /* Work logo image */
+        .work-logo img, .work-logo svg {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        /* Work details container */
+        .work-details {
+            flex-grow: 1;
+        }
+        
+        /* Company name */
+        .work-company {
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+        
+        /* Job position */
+        .work-position {
+            color: #666;
+            margin-bottom: 2px;
+        }
+        
+        /* Work period */
+        .work-period {
+            font-size: 14px;
+            color: #888;
+        }
+        
+        /* Download CV button */
+        .download-button {
+            width: 100%;
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.2s;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .download-button:hover {
+            background-color: #555353;
+        }
+        a{
+            text-decoration: none;
+        }
+        /* Footer section */
+        .footer {
+            background-color: #f0f0f0;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 1px solid #ddd;
+        }
+        
+        /* Footer content container */
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Footer links container */
+        .footer-links {
+            display: flex;
+            gap: 20px;
+        }
+        
+        /* Individual footer link */
+        .footer-links a {
+            color: #555;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        /* Footer copyright text */
+        .footer-copyright {
+            color: #888;
+            font-size: 14px;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            /* Adjust banner for mobile */
+            .banner h1 {
+                font-size: 20px;
+            }
+            
+            /* Adjust navbar for mobile */
+            .navbar-container {
+                flex-direction: column;
+                gap: 15px;
+                padding: 15px 10px;
+            }
+            
+            .nav-links {
+                width: 100%;
+                justify-content: space-between;
+                padding: 10px 0;
+            }
+            
+            /* Adjust hero section for mobile */
+            .hero h1 {
+                font-size: 28px;
+            }
+            
+            .hero p {
+                font-size: 16px;
+            }
+            
+            /* Stack main content and sidebar for mobile */
+            .content-section {
+                flex-direction: column;
+            }
+            
+            /* Adjust article cards for mobile */
+            .article-card {
+                padding: 20px 15px;
+            }
+            
+            .article-title {
+                font-size: 20px;
+            }
+            
+            /* Adjust footer for mobile */
+            .footer-content {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+            
+            .footer-links {
+                justify-content: center;
+            }
+        }

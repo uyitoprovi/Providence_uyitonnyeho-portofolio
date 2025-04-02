@@ -3,207 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Providence Uyito</title>
-    <style>
-        
-        .container {
-            font-family: Arial, sans-serif;
-            background-color: #121212;
-            color: #f5f5f5;
-            line-height: 1.6;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        
-        /* Header and profile section */
-        .profile-section {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 50px;
-            margin-bottom: 60px;
-        }
-        
-        .profile-content {
-            flex: 1;
-        }
-        
-        .profile-image {
-            width: 300px;
-            height: 350px;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        
-        .profile-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        h1 {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 30px;
-        }
-        
-        .intro-text {
-            margin-bottom: 30px;
-            color: #c0c0c0;
-        }
-        
-        /* Values section */
-        .values-section {
-            margin-bottom: 40px;
-        }
-        
-        .value-item {
-            margin-bottom: 30px;
-        }
-        
-        .value-title {
-            font-weight: bold;
-            margin-bottom: 8px;
-        }
-        
-        .value-description {
-            color: #c0c0c0;
-        }
-        
-        /* Experience section */
-        .experience-section {
-            margin-bottom: 60px;
-        }
-        
-        /* Social links */
-        .social-links {
-            margin-top: 40px;
-        }
-        
-        .social-link {
-            display: flex;
-            align-items: center;
-            margin-bottom: 15px;
-            color: #f5f5f5;
-            text-decoration: none;
-        }
-        
-        .social-link:hover {
-            color: #6e8efb;
-        }
-        
-        .social-icon {
-            margin-right: 10px;
-            width: 24px;
-            height: 24px;
-        }
-        
-        .email-container {
-            display: flex;
-            align-items: center;
-            margin-top: 20px;
-        }
-        
-        .copy-icon {
-            margin-left: 10px;
-            cursor: pointer;
-            color: #c0c0c0;
-        }
-        
-        /* Footer */
-        .footer {
-            background-color: #1a1a1a;
-            padding: 30px 0;
-            margin-top: 50px;
-            border-top: 1px solid #333;
-        }
-        
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        .footer-links {
-            display: flex;
-            gap: 30px;
-        }
-        
-        .footer-links a {
-            color: #f5f5f5;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-        
-        .footer-links a:hover {
-            color: #6e8efb;
-        }
-        
-        .footer-copyright {
-            color: #999;
-            font-size: 14px;
-        }
-        
-        /* Responsive design */
-        @media (max-width: 768px) {
-            .profile-section {
-                flex-direction: column-reverse;
-                gap: 30px;
-            }
-            
-            .profile-image {
-                width: 100%;
-                max-width: 300px;
-                margin: 0 auto;
-            }
-            
-            .footer-content {
-                flex-direction: column;
-                gap: 20px;
-                text-align: center;
-            }
-            
-            .footer-links {
-                flex-direction: column;
-                gap: 15px;
-            }
-        }
-    </style>
+    <title>About - Uyito Provi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="about.css">
 </head>
 <body>
+    <!-- sticky section -->
+    <div class="sticky-section">
+        <div class="navbar-container">
+            <!-- Profile picture in navbar -->
+            <div class="nav-profile">
+                <img src="image/3.jpg" alt="providence" class="profile-picture">
+            </div>
+            
+            <!-- Navigation links -->
+            <div class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#uses">Uses</a>
+            </div>
+            
+            <!-- Dark mode toggle -->
+            <div class="dark-mode-toggle">
+                🌙
+            </div>
+        </div>
+    </div>
     <div class="container">
         <section class="profile-section">
             <div class="profile-content">
-                <h1>I'm Uyito Provi . I reside in India, where I shape tomorrow.</h1>
+                <h2>I'm Uyito Provi.<br> I reside in India IN,<br> where I shape tomorrow.</h2>
                 <p class="intro-text">
                     I've always been a great problem solver, inquisitive about how things work. Today, I'm a web developer and have built several projects that I invite you to explore. These projects demonstrate the skills I have acquired and what I can bring to your project.
                 </p>
                 
                 <div class="values-section">
                     <div class="value-item">
-                        <div class="value-title">Work Ethic -</div>
-                        <div class="value-description">I believe a good day is a productive day. I use my work hours to be productive and strive to bring value each and every day.</div>
+                      
+                        <div class="value-description"> <b style="color: white;">Work Ethic </b>- I believe a good day is a productive day. I use my work hours to be productive and strive to bring value each and every day.</div>
                     </div>
                     
                     <div class="value-item">
-                        <div class="value-title">Empathy -</div>
-                        <div class="value-description">I understand the needs of the business and put myself in the stakeholder's shoes. I leverage my skills as a developer to solve the issues facing the business.</div>
+                        <div class="value-description"><b style="color: white;">Empathy</b> - I understand the needs of the business and put myself in the stakeholder's shoes. I leverage my skills as a developer to solve the issues facing the business.</div>
                     </div>
                     
                     <div class="value-item">
-                        <div class="value-title">Commitment to Craft -</div>
-                        <div class="value-description">What I know today cannot be the only thing I know tomorrow. I'm committed to learning new things and improving my skillset to bring the most value to any project.</div>
+                        <div class="value-description"><b style="color: white;">Commitment to Craft</b> - What I know today cannot be the only thing I know tomorrow. I'm committed to learning new things and improving my skillset to bring the most value to any project.</div>
                     </div>
                 </div>
                 
                 <div class="experience-section">
-                    <p>Today, I'm a full-stack developer. My journey has been shaped by countless hours of learning and growth, fueled by my passion for tech. While I haven’t yet had the opportunity to mentor others directly, I continue to invest in expanding my knowledge and skills. My goal is to one day support and guide aspiring developers on their own paths, 
-                        just as I’ve been inspired by those who came before me.</p>
+                    <p>Today, I'm a full-stack developer. My journey has been shaped by countless hours of learning and growth, fueled by my passion for tech. While I haven't yet had the opportunity to mentor others directly, I continue to 
+                        invest in expanding my knowledge and skills. My goal is to one day support and guide aspiring developers on their own paths, 
+                        just as I've been inspired by those who came before me.</p>
+                </div>
+            </div>
+            
+            <div class="profile-right">
+                <div class="profile-image">
+                    <img src="image/3.jpg" alt="Uyito Provi">
                 </div>
                 
                 <div class="social-links">
@@ -212,7 +70,7 @@
                         Follow on Twitter
                     </a>
                     <a href="https://github.com/" class="social-link">
-                        <i class="fa-brands fa-square-github"></i>~
+                        <i class="fa-brands fa-square-github"></i>
                         Follow on GitHub
                     </a>
                     <a href="https://linkedin.com/" class="social-link">
@@ -221,29 +79,25 @@
                     </a>
                     
                     <div class="email-container">
-                        <span>tuyambazeleandre@gmail.com</span>
-                        <svg class="copy-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        <span>uyitoprovi@gmail.com</span>
                     </div>
                 </div>
             </div>
-            
-            <div class="profile-image">
-                <img src="/api/placeholder/300/350" alt="Leandre Ally">
-            </div>
         </section>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="home.html">Home</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="uses.html">Uses</a>
+                </div>
+                <div class="footer-copyright">
+                    © 2025 providence uyito. All rights reserved.
+                </div>
+            </div>
+        </footer>
     </div>
-    
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="about.html">About</a>
-                <a href="projects.html">Projects</a>
-                <a href="uses.html">Uses</a>
-            </div>
-            <div class="footer-copyright">
-                © 2025 Leandre Ally. All rights reserved.
-            </div>
-        </div>
-    </footer>
 </body>
 </html>

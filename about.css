@@ -1,0 +1,272 @@
+ /* Sticky navigation section */
+ .sticky-section {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #1a1a1a; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 10px 10px;
+}
+
+/* Container for navbar elements */
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+/* Profile picture container in navbar */
+.nav-profile {
+    display: flex;
+    align-items: center;
+}
+
+/* Profile picture styling */
+.profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Navigation links container */
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #f7f3f3;
+    font-weight: 800;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color:  #594642;
+}
+
+/* Dark mode toggle button */
+.dark-mode-toggle {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.container {
+    font-family: Arial, sans-serif;
+    background-color: #212121;
+    color: #f5f5f5;
+    line-height: 1.6;
+    max-width: 900px; 
+    margin: 0 auto;
+    padding: 40px 40px;
+    position: relative;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding-bottom: 110px; 
+}
+body {
+    background-color: #121212;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and profile section */
+.profile-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+.profile-content {
+    flex: 1;
+}
+
+.profile-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+.profile-image {
+    width: 300px;
+    height: 350px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.intro-text {
+    margin-bottom: 30px;
+    color: #c0c0c0;
+}
+
+/* Values section */
+.values-section {
+    margin-bottom: 40px;
+}
+
+.value-item {
+    margin-bottom: 30px;
+}
+
+.value-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.value-description {
+    color: #c0c0c0;
+}
+
+/* Experience section */
+.experience-section {
+    margin-bottom: 60px;
+}
+
+/* Social links */
+.social-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    color: #ce482d;
+}
+
+.social-link i {
+    margin-right: 10px;
+}
+
+.email-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.social-links::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #444;
+    margin-top: 20px;
+}
+
+/* Footer section */
+.footer {
+    background-color: #1a1a1a; 
+    border-color: #c0c0c0;
+    padding: 30px 0;
+    border-top: 1px solid #333;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+/* Footer content container */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Footer links container */
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+.footer-links a {
+    color: #c0c0c0; 
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-links a:hover {
+    color: #f5f5f5;
+}
+
+/* Footer copyright text */
+.footer-copyright {
+    color: #888;
+    font-size: 14px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    /* Adjust navbar for mobile */
+    .navbar-container {
+        flex-direction: column;
+        padding: 10px 10px;
+    }
+    
+    .nav-links {
+        width: 100%;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+    .profile-section {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    
+    .profile-content {
+        width: 100%;
+    }
+    
+    .profile-right {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .profile-image {
+        width: 100%;
+    }
+    
+    /* Adjust footer for mobile */
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .footer-links {
+        justify-content: center;
+    }
+    
+    .container {
+        padding-bottom: 150px; 
+    }
+}

@@ -48,7 +48,7 @@
             font-weight: 500;
         }
         
-        /* Animation delay for each text item */
+        /* Animation */
         .text:nth-child(1) {
             animation-delay: 0s;
         }
@@ -131,14 +131,6 @@
         .nav-links a:hover {
             color:  #594642;
         }
-        
-        /* Dark mode toggle button */
-        .dark-mode-toggle {
-            cursor: pointer;
-            font-size: 20px;
-        }
-        
-        
 /* Main content container */
 .main-content {
     max-width: 900px;
@@ -202,12 +194,12 @@
 
 /* Main content area */
 main {
-    flex: 3;
+    flex: 2.5;
 }
 
 /* Sidebar content */
 aside {
-    flex: 1;
+    flex: 1.5;
 }
 
 /* Article card container */

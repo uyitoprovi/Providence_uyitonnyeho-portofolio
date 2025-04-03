@@ -1,4 +1,9 @@
- /* Sticky navigation section */
+body {
+    background-color: #121212;
+    margin: 0;
+    padding: 0;
+}
+/* Sticky navigation section */
  .sticky-section {
     position: sticky;
     top: 0;
@@ -67,11 +72,6 @@
     min-height: 100vh;
     box-sizing: border-box;
     padding-bottom: 110px; 
-}
-body {
-    background-color: #121212;
-    margin: 0;
-    padding: 0;
 }
 
 /* Header and profile section */
@@ -270,3 +270,5 @@ h1 {
         padding-bottom: 150px; 
     }
 }
+
+

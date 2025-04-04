@@ -80,7 +80,6 @@
     position: relative;
     min-height: 100vh;
     box-sizing: border-box;
-    padding-bottom: 110px; 
     }
         
 header {
@@ -145,7 +144,7 @@ h1 {
     }
     
     footer {
-        background-color: #1a1a1a;
+    background-color: #1a1a1a;
     padding: 30px 0;
     margin-top: 50px;
     border-top: 1px solid #333;
@@ -186,7 +185,6 @@ h1 {
     color: #888;
     font-size: 14px;
 }
-/* Mobile responsiveness */
 /* Footer section */
 .footer {
     background-color: #1a1a1a; 

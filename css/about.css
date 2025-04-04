@@ -225,16 +225,18 @@ h1 {
 
 /* Responsive design */
 @media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
     /* Adjust navbar for mobile */
     .navbar-container {
-        flex-direction: column;
-        padding: 10px 10px;
+        
+        padding: 10px 15px;
     }
     
     .nav-links {
-        width: 100%;
-        justify-content: space-between;
-        padding: 10px 0;
+        gap: 15px;
+        margin-top: 40px;
     }
     .profile-section {
         flex-direction: column;
@@ -265,18 +267,20 @@ h1 {
     .footer-links {
         justify-content: center;
     }
-    
-    .container {
-        padding-bottom: 150px; 
+    .email-container{
+        text-align: center;
+        margin-bottom: 10px;
+
     }
+    
 }
 
 
 /* Mobile Device Border on actual mobile devices */
 @media only screen and (max-width: 767px) and (orientation: portrait) {
-    body {
-        margin: 0;
-    }
+        body {
+            padding: 0.5rem;
+        }
     
     /* the mobile frame */
     .mobile-frame {
